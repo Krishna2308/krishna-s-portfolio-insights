@@ -24,6 +24,7 @@ const DESKTOP_NODES: NodeDef[] = [
   { tag: "Conversational UI", tier: "domain", x: 830, y: 140, anchor: "start", dy: 5 },
   { tag: "Research", tier: "domain", x: 430, y: 380, anchor: "middle", dy: 27 },
   { tag: "Healthcare", tier: "domain", x: 130, y: 90, anchor: "end", dy: 5 },
+  { tag: "Travel", tier: "domain", x: 800, y: 350, anchor: "start", dy: 5 },
 ];
 
 const MOBILE_NODES: NodeDef[] = [
@@ -33,6 +34,7 @@ const MOBILE_NODES: NodeDef[] = [
   { tag: "Conversational UI", tier: "domain", x: 268, y: 330, anchor: "middle", dy: 25 },
   { tag: "Research", tier: "domain", x: 108, y: 330, anchor: "middle", dy: 25 },
   { tag: "Healthcare", tier: "domain", x: 190, y: 424, anchor: "middle", dy: 25 },
+  { tag: "Travel", tier: "domain", x: 300, y: 258, anchor: "start", dy: 5 },
 ];
 
 const EDGES: [string, string][] = [
@@ -44,6 +46,7 @@ const EDGES: [string, string][] = [
   ["Interaction Design", "Research"],
   ["Interaction Design", "Healthcare"],
   ["AI", "Conversational UI"],
+  ["AI", "Travel"],
   ["Research", "Healthcare"],
 ];
 
@@ -264,13 +267,16 @@ const ExpertiseConstellation = () => {
         </Reveal>
 
         <ul className="sr-only">
-          {nodes.map((node) => (
-            <li key={node.tag}>
-              <Link to={`/work?tag=${encodeURIComponent(node.tag)}`}>
-                {node.tag} — {counts[node.tag] ?? 0} case studies
-              </Link>
-            </li>
-          ))}
+          {nodes.map((node) => {
+            const count = counts[node.tag] ?? 0;
+            return (
+              <li key={node.tag}>
+                <Link to={`/work?tag=${encodeURIComponent(node.tag)}`}>
+                  {node.tag} — {count} case {count === 1 ? "study" : "studies"}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </section>

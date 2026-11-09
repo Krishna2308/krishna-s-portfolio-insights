@@ -59,6 +59,7 @@
     --tag-conversational: 235 54% 55%;
     --tag-research: 213 64% 45%;
     --tag-healthcare: 204 58% 39%;
+    --tag-travel: 243 58% 52%;
   }
 
   /* The tag hues above are tuned against light surfaces and drop below 4.5:1 on a
@@ -70,6 +71,7 @@
     --tag-conversational: 235 78% 78%;
     --tag-research: 213 82% 72%;
     --tag-healthcare: 204 78% 68%;
+    --tag-travel: 243 80% 76%;
   }
 }
 

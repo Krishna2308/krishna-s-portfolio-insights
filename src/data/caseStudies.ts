@@ -115,7 +115,7 @@ export const caseStudies: CaseStudy[] = [
     role: "Founder and designer",
     year: "2025–2026",
     context: "Master's Thesis · Northwestern University",
-    tags: ["AI", "Experience Design", "Interaction Design"],
+    tags: ["AI", "Experience Design", "Interaction Design", "Travel"],
     summary:
       "Group trips are supposed to bring people together, but planning often creates decision fatigue and social friction. Jointly is an AI travel app that helps friend groups move from scattered ideas to a plan everyone can shape together.",
     featured: true,

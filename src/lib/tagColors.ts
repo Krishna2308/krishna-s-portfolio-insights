@@ -10,6 +10,7 @@ const TAG_TOKENS: Record<string, string> = {
   "Conversational UI": "--tag-conversational",
   Research: "--tag-research",
   Healthcare: "--tag-healthcare",
+  Travel: "--tag-travel",
 };
 
 export const tagColor = (tag: string): string => {

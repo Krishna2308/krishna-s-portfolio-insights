@@ -31,7 +31,7 @@ const experience = [
     role: "Design Researcher",
     org: "Northwestern Medicine · 2025",
     blurb:
-      "Led design research for a digital health tool for pediatric GI patients. Ran focus groups and 12+ clinician interviews, built journey maps, and delivered validated prototypes; research supported a paper submitted to JMIR.",
+      "Led design research for a digital health tool for pediatric GI patients. Ran focus groups and 12+ clinician interviews, built journey maps, and delivered validated prototypes; research supported a paper published in JMIR.",
   },
   {
     period: "2025",
@@ -213,7 +213,7 @@ const About = () => {
             </div>
             <div className="rounded-sm border border-border p-4">
               <p className="text-foreground font-medium mb-1 text-base">Usually doing</p>
-              <p className="text-muted-foreground leading-relaxed">Wandering a city with a camera, trying new cuisines, vibe coding solutions to my problems</p>
+              <p className="text-muted-foreground leading-relaxed">Wandering a city with a camera, trying new cuisines, building small tools to solve my own problems</p>
             </div>
           </div>
         </Reveal>
